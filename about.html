@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – My Blog</title>
+  <meta name="author" content="Luke Morency" />
+  <meta name="description" content="About the author" />
+  <link rel="icon" href="data:," />
+    <!-- Linked global stylesheet (single CSS file for all pages) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+  <div class="inner">
+    <nav aria-label="Primary">
+      <a class="brand" href="index.html">My Blog</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+  <div class="layout"><!-- Two‑column Flexbox layout: main content + sidebar -->
+<main id="main-content">
+    
+    <!-- Floated image with caption (meets lab option) -->
+    <figure class="float-right">
+      <img src="/luke-about.jpg" alt="Luke Morency smiling at a campus event" width="280" height="320">
+      <figcaption>On campus at MSU — Go Green!</figcaption>
+    </figure>
+<article itemscope itemtype="https://schema.org/Person">
+      <figure>
+        <img src="luke-about.jpg" alt="Luke Morency with a cat inside his hoodie">
+      </figure>
+      <div class="inner">
+        <header class="site-header">
+  <div class="inner">
+          <h1 itemprop="name">Luke Morency</h1>
+          <p class="muted">Last updated: <time datetime="2025-09-27">September 27, 2025</time></p>
+          </div>
+</header>
+
+        <p itemprop="description">
+          Hi, I’m Luke. I’m an Information Science student at Michigan State University, building skills in web design, digital media, and data analysis. I like creating clean, accessible websites and experimenting with simple, effective layouts that anyone can use. This website is part of my ongoing learning process and a place to share what I build.
+        </p>
+
+        <p>
+          Outside of class, I enjoy lifting weights, gaming, and working on creative projects like this site. My cat often keeps me company when I’m coding, as you can see in the photo above. I try to keep a balance between learning new tools, focusing on fitness, and enjoying time with friends and family.
+        </p>
+
+        <aside aria-label="Quick facts">
+          <h2 style="margin-top:0">Quick Facts</h2>
+          <ul>
+            <li>Studying Information Science at MSU</li>
+            <li>Enjoys sports, gaming, and tech projects</li>
+            <li>Focus on clean, accessible design</li>
+          </ul>
+        </aside>
+
+        <section aria-label="Links">
+          <h2 style="margin-top:0">Find Me</h2>
+          <ul>
+            <li><a href="mailto:lukemorency@example.com">lukemorency@example.com</a></li>
+            <li><a href="https://lwmorency.github.io/" rel="me">Personal site</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+</div>
+
+  <footer>
+    <p>© 2025 Luke Morency</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – My Blog</title>
+  <meta name="author" content="Luke Morency" />
+  <meta name="description" content="Contact form for inquiries" />
+  <link rel="icon" href="data:," />
+    <!-- Linked global stylesheet (single CSS file for all pages) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+  <div class="inner">
+    <nav aria-label="Primary">
+      <a class="brand" href="index.html">My Blog</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+  <div class="layout"><!-- Two‑column Flexbox layout: main content + sidebar -->
+<main id="main-content">
+    <section class="card" aria-labelledby="contact-heading">
+      <header class="site-header">
+  <div class="inner">
+        <h1 id="contact-heading">Contact</h1>
+        <p><small>Use the form below to get in touch. Fields marked with * are required.</small></p>
+        </div>
+</header>
+
+      <!-- ✅ Fully Netlify-enabled form -->
+      <form class="contact-form" aria-labelledby="contact-heading" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+        <!-- Hidden form-name input (required by Netlify) -->
+        <input class="form-input" type="hidden" name="form-name" value="contact" />
+        <!-- Hidden honeypot for spam prevention -->
+        <p style="display:none">
+          <label class="form-label">Don’t fill this out if you're human: <input class="form-input" name="bot-field" /></label>
+        </p>
+
+        <div class="row">
+          <div>
+            <div class="form-row"><label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" name="name" type="text" autocomplete="name" placeholder="Your name" /></div>
+          </div>
+          <div>
+            <div class="form-row"><label class="form-label" for="email">Email address *</label>
+            <input class="form-input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></div>
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label" for="reason">Reason for contact *</label>
+          <select id="reason" name="reason" required>
+            <option value="" selected disabled>Choose one</option>
+            <option value="hi">Saying hi</option>
+            <option value="contractor">Looking for a contractor</option>
+            <option value="interview">Interested in an interview</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="form-row"><label class="form-label" for="message">Message *</label>
+          <textarea class="form-textarea" id="message" name="message" required placeholder="How can I help?"></textarea></div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p><small>Submissions are processed by Netlify Forms.</small></p>
+      </form>
+
+      <section aria-label="Form metadata" style="margin-top:8px">
+        <p>
+          <strong>Page metadata:</strong>
+          <time datetime="2025-09-27">Published September 27, 2025</time> •
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Author: <span itemprop="name">Luke Morency</span>
+          </span>
+        </p>
+      </section>
+    </section>
+  </main>
+<!-- Global sidebar (persists on all pages) -->
+<aside class="sidebar" aria-label="Sidebar with site info and links">
+  <section class="card">
+    <h2 class="h4">About this site</h2>
+    <p>This is my MI 349 blog project. Built with semantic HTML5.</p>
+  </section>
+  <nav aria-label="Site sections" class="card">
+    <h2 class="h4">Sections</h2>
+    <ul class="list-plain">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+</div>
+
+  <footer>
+    <p>© 2025 Luke Morency</p>
+  </footer>
+</body>
+</html>

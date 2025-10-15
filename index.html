@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Blog – Home</title>
+    <!-- Linked global stylesheet (single CSS file for all pages) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+  <div class="inner">
+    <nav aria-label="Primary">
+      <a class="brand" href="index.html" aria-current="page">My Blog</a>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+  <div class="layout"><!-- Two‑column Flexbox layout: main content + sidebar -->
+<main id="main-content">
+    <section class="hero" aria-label="Intro">
+      <h1>Fresh posts, simple ideas.</h1>
+      <p>Two original blog posts below. One includes a data table. Subscribe at the bottom to get updates.</p>
+    </section>
+
+    <section class="posts" aria-label="Blog posts">
+      <!-- Post 1: includes a table -->
+      <article>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="A tidy desk with a notebook and a cup of coffee" />
+        </figure>
+        <div class="post-inner">
+          <header class="site-header">
+  <div class="inner">
+            <h2>Designing a Morning Routine That Actually Sticks</h2>
+            <p class="meta">By <strong>Luke Morency</strong> · <time datetime="2025-09-27">September 27, 2025</time></p>
+            </div>
+</header>
+          <p>
+            If you’ve ever declared, “Tomorrow I’ll wake up early and change everything,” you’re not alone. The real trick to a morning routine that
+            actually survives the first week isn’t motivation; it’s designing friction-light steps you can repeat on autopilot. I like to think of routines
+            as UX for your day. Instead of a heroic hour-long ritual, start with three tiny actions that take less than five minutes total: drink a glass of
+            water, put your phone face-down in another room, and write one line about what would make today a win. That’s it. When those become effortless,
+            expand them. Pair habits using “after I ___, I will ___.” After I brush my teeth, I’ll open the curtains. After I open the curtains, I’ll do
+            ten slow breaths by the window. In the background, control the inputs: prep your outfit at night, set a single gentle alarm, and keep your desk
+            clear so the first thing you see invites focus. The goal isn’t a perfect morning; it’s removing decisions so momentum carries you forward.
+            Over time, you’ll notice the compounding effect—less scramble, more intention, and a day that starts with a small win rather than a sprint.
+          </p>
+          <p>
+            To make the routine tangible, try tracking your first week with a simple table. Don’t aim for flawless streaks; aim for noticing patterns.
+            If Wednesday always collapses, plan a shorter routine that day and declare it a success. Progress looks like consistency that survives chaos.
+          </p>
+
+          <table aria-label="Sample weekly focus tracker">
+            <caption>Week 1 – Morning Routine Tracker</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Main Focus</th>
+                <th scope="col">Deep Work (hrs)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon</td>
+                <td>Write one page</td>
+                <td>1.0</td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>Research sources</td>
+                <td>0.7</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>Outline next steps</td>
+                <td>1.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="Barbell and plates on a gym floor" />
+        </figure>
+        <div class="post-inner">
+          <header class="site-header">
+  <div class="inner">
+            <h2>Beginner Strength: The Three-by-Five Blueprint</h2>
+            <p class="meta">By <strong>Luke Morency</strong> · <time datetime="2025-09-20">September 20, 2025</time></p>
+            </div>
+</header>
+          <p>
+            Starting a strength program can feel like opening a toolbox you’ve never used—lots of shiny options, no idea where to begin. The three-by-five
+            blueprint keeps things simple: choose three compound lifts (squat, press, pull), train them three days per week, and do five heavy reps for
+            three sets each. Compound movements recruit the most muscle per minute and teach coordination you’ll use in daily life: standing up with
+            groceries, bracing your core, or hoisting a suitcase overhead. Focus on slow progress, not heroics. Add 2.5–5 lbs per session as long as your
+            form stays crisp. Warm up with lighter sets, rest two to three minutes between work sets, and stop one rep shy of failure. If a session feels
+            rough, keep the weight the same next time and prioritize sleep and protein. Speaking of which, your kitchen is part of the program: aim for a
+            gram of protein per pound of goal bodyweight across real meals, not just shakes. Track workouts with pen and paper so progress is visible.
+            Finally, give yourself a clear exit: the workout ends when the last set ends—no random burnout circuits. You’ll leave energy to recover and
+            arrive at the next session ready to build again. Eight weeks from now, your logbook will tell the story: steady numbers, better posture, and a
+            confidence that outlifts the noise.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" aria-label="Email newsletter signup">
+      <h3 style="margin:0">Get the Newsletter</h3>
+      <p class="small">Actionable ideas, no spam. One click to unsubscribe.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name (optional)</label>
+          <input type="text" id="name" name="name" autocomplete="name" />
+        </div>
+        <div>
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="small">By subscribing, you agree to receive emails from us. We’ll never share your address.</p>
+    </section>
+  </main>
+<!-- Global sidebar (persists on all pages) -->
+<aside class="sidebar" aria-label="Sidebar with site info and links">
+  <section class="card">
+    <h2 class="h4">About this site</h2>
+    <p>This is my MI 349 blog project. Built with semantic HTML5.</p>
+  </section>
+  <nav aria-label="Site sections" class="card">
+    <h2 class="h4">Sections</h2>
+    <ul class="list-plain">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+</div>
+
+  <footer>
+    <p>© 2025 My Blog • Built with semantic HTML5.</p>
+  </footer>
+</body>
+</html>
